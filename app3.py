@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score
 st.set_page_config(page_title="Soil Health and Test Case Analyzer", page_icon="🌱", layout="wide")
 
 # Upload Dataset
-uploaded_file = st.file_uploader("Upload your soil data CSV file", type=["csv"])
+uploaded_file = st.file_uploader("final_soil_data_with_spectral.csv", type=["csv"])
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
     st.success("✅ Dataset loaded successfully!")
